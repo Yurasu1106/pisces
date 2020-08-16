@@ -6,7 +6,7 @@
 /*   By: jperrier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/15 11:00:24 by jperrier          #+#    #+#             */
-/*   Updated: 2020/08/15 12:22:00 by jperrier         ###   ########lyon.fr   */
+/*   Updated: 2020/08/16 16:29:51 by jperrier         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ int		is_border(int x, int y, int limit_x, int limit_y)
 
 char	get_symbol(int x, int y, int limit_x, int limit_y)
 {
-	if ((x == 0 && y == 0))
+	if (x == 0 && y == 0)
 		return ('/');
-	if	(x == 0 && y == limit_y - 1)
+	if (x == 0 && y == limit_y - 1)
 		return ('\\');
 	if (x == limit_x - 1 && y == 0)
 		return ('\\');
